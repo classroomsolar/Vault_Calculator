@@ -1,0 +1,44 @@
+UNDERGROUND ENCLOSURE / VAULT CALCULATOR — v4.0 BATCH 9 FULL PACKAGE
+
+CURRENT RELEASE FILES
+1. Underground_Enclosure_Calculator_v4.0_B09_SCHEDULE_BOM_SCHEMATIC.xlsx
+   - Current master workbook
+   - Batches 1–9 integrated
+   - 57 sheets
+   - 21,751 formulas
+   - 280 validation/dropdown rules
+   - 0 cached formula errors in final binary audit
+   - 0 _xlfn formulas
+   - 0 @ formulas
+   - 0 external workbook links
+
+2. OneClickReport_v4_0_B09.bas
+   - Desktop Excel VBA module
+   - Includes RefreshAndValidate, full report/PDF, summary report, pull package, and button-install commands
+   - Must be imported in desktop Excel; save as .xlsm if a macro-enabled single workbook is desired
+
+3. v40_B09_audit.json
+   - Consolidated Batch-9 workbook audit
+   - Includes nested Batch-8 audit evidence
+   - Batch 8 regression: 7/7 PASS
+   - Batch 9 regression: 9/9 PASS
+
+4. v40_B09_vba_audit.json
+   - Static VBA package audit
+
+5. v40_B09_schedule_preview.png
+   - Vault schedule/BOM preview
+
+6. v40_B09_schematic_preview.png
+   - Automatic plan/section schematic preview
+
+ENGINEERING BOUNDARIES
+- Thermal handoff does not claim a full IEC 60287 / Neher-McGrath / FEM study.
+- Fault/grounding handoff does not claim a full short-circuit, protection-coordination, ground-grid, or zero-sequence study.
+- Structural/site/drainage checks are screening/handoff tools, not stamped civil/structural/hydraulic design.
+- Automatic plan/section output is a schematic, not a CAD-certified construction drawing.
+- Desktop Excel is still required to execute/test the VBA printing/PDF workflow.
+
+STATUS
+Batches 1–9 complete.
+Batch 10 remains: final one-click integration, final UI/report polish, cross-module adversarial regression, final release gate, and final master cleanup.

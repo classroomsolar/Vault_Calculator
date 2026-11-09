@@ -1,0 +1,61 @@
+{
+  "batch": 9,
+  "source": "Underground_Enclosure_Calculator_v4.0_B08_STUDY_HANDOFF_RESERVE.xlsx",
+  "output": "Underground_Enclosure_Calculator_v4.0_B09_SCHEDULE_BOM_SCHEMATIC.xlsx",
+  "status": "PASS",
+  "sheets_before": 54,
+  "sheets_after": 57,
+  "formula_count_before": 20853,
+  "formula_count_after": 21751,
+  "validation_before": 279,
+  "validation_after": 280,
+  "existing_formula_changes": [],
+  "test_count": 9,
+  "test_pass": 9,
+  "cached_errors": [],
+  "xlfn": 0,
+  "at": 0,
+  "external_links": 0,
+  "max_formula": 5163,
+  "batch8_audit": {
+    "batch": 8,
+    "source": "Underground_Enclosure_Calculator_v4.0_B07_SITE_ENVIRONMENT.xlsx",
+    "output": "Underground_Enclosure_Calculator_v4.0_B08_STUDY_HANDOFF_RESERVE.xlsx",
+    "status": "PASS",
+    "sheets_before": 52,
+    "sheets_after": 54,
+    "formula_count_before": 20635,
+    "formula_count_after": 20853,
+    "validation_before": 273,
+    "validation_after": 279,
+    "existing_formula_changes": [],
+    "test_count": 7,
+    "test_pass": 7,
+    "cached_errors": [],
+    "xlfn": 0,
+    "at": 0,
+    "external_links": 0,
+    "max_formula": 5163,
+    "boundaries": [
+      "No full IEC 60287 / Neher-McGrath / FEM thermal calculation added.",
+      "No short-circuit, protection-coordination, grounding-grid or zero-sequence network calculation claimed.",
+      "Future reserve uses minimum applicable subsystem reserve; percentages are never summed."
+    ],
+    "defect_fixes": [
+      "Thermal handoff now derives the active circuit list from the primary circuit register instead of requiring duplicate circuit IDs in the optional thermal-study table.",
+      "Removed a formula-engine parser defect caused by nested IFERROR in the new thermal handoff status formula.",
+      "Corrected the system-voltage status cell from an invalid =PASS formula to a literal PASS state."
+    ]
+  },
+  "schematic_boundary": "Cell-grid plan/section schematic is automatically driven from calculated coordinates and selected-wall H/V data; it is explicitly not a CAD-certified construction drawing.",
+  "defect_fix": "Vault schedule entry count changed from wildcard text counting to positive entry-quantity counting for reliable calculation-engine behavior.",
+  "external_formula_refs": 0,
+  "intentional_existing_formula_fixes_after_batch9_build": [
+    "48_STUDY_HANDOFF_RESERVE!B63 — blank-state reserve bottleneck now returns blank when no reserve subsystem is active.",
+    "48_STUDY_HANDOFF_RESERVE!E64 — blank-state future reserve status now returns N/A.",
+    "51_AUTO_PLAN_SECTION plan/section grid formulas — blank rows excluded and half-open bins prevent duplicate points on gridlines.",
+    "51_AUTO_PLAN_SECTION!C42 — blank schematic state now returns N/A.",
+    "50_VAULT_SCHEDULE_BOM!B6:C6 — project metadata is blank-safe."
+  ],
+  "final_release_note": "Batches 1–9 complete; Batch 10 remains for final one-click integration, release polish and full integrated adversarial regression."
+}

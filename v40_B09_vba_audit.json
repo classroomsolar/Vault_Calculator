@@ -1,0 +1,20 @@
+{
+  "module": "OneClickReport_v4_0_B09.bas",
+  "subs": {
+    "RefreshAndValidate": true,
+    "PrintFullReport": true,
+    "ExportFullReportPDF": true,
+    "PrintSummaryReport": true,
+    "PrintPullPackage": true,
+    "InstallPrintButtonsSilent": true,
+    "InstallPrintButtons": true
+  },
+  "requires_batch8": true,
+  "requires_batch9": true,
+  "full_has_schedule": true,
+  "full_has_schematic": true,
+  "summary_has_schedule": true,
+  "summary_has_schematic": true,
+  "batch9_header": true,
+  "pass": true
+}
